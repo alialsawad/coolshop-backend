@@ -21,3 +21,20 @@ Where ./file.csv is the path to a CSV file formatted in this way:
 2,Gialli,Alessandro,02/07/1989;
 3,Verdi,Alberto,03/08/1987;
 ```
+
+### Available Commands
+
+```bash
+$ node index.js [path] [column number / options] [key]
+```
+
+- Path: this is the location of the file.
+- Column number: this is the index of the required column.
+- Options:
+  - all: get all available data.
+  - first: get the first entry.
+  - last: get the last entry.
+  - head: returns the first five results.
+  - tail: returns the last five results.
+  - random: returns a random entry.
+- Key: the value to look for.
