@@ -6,7 +6,7 @@ Write a script that executes the current requirements:
 
 - Receives as input the path to a CSV file to be imported
 - A column number in which to search
-- And a search key to validate against
+- A search key to validate against
 
 The script must be invoked in this way (example in PHP):
 
@@ -21,6 +21,10 @@ Where ./file.csv is the path to a CSV file formatted in this way:
 2,Gialli,Alessandro,02/07/1989;
 3,Verdi,Alberto,03/08/1987;
 ```
+
+The number 2 represents the index of the column to search in (in the previous file the name) and Alberto represents the search key.
+
+The output of the command must be the corresponding line, in our case: `3, Verdi, Alberto,03/08/1987;`
 
 ### Available Commands
 
